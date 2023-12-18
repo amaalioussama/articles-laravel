@@ -16,13 +16,13 @@ class HomeController extends Controller
     public function index()
     {
         $articles = Article::all();
-        return View::make('home')->with('articles', $articles);
+        return view('home',['articles'=> $articles]);
     }
 
     public function showMore($id)
     {
         $article = Article::findOrFail($id);
-        return view('show-more')->with('article', $article);
+        return view('show-more',['article'=> $article]);
     }
 }
 

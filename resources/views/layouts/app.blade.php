@@ -8,7 +8,9 @@
 <body>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('contactUs') }}">Contact Us</a>
+        <a href="{{ route('login') }}">Login</a>
             <!-- Add more links as needed -->
         </ul>
     </nav>
